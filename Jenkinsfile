@@ -36,7 +36,7 @@ pipeline {
     }
     stage('publish junit results') {
       steps {
-        junit(testResults: '*.xml', healthScaleFactor: 0.1)
+        junit(testResults: '*.xml', healthScaleFactor: 1.0, allowEmptyResults: true)
       }
     }
   }
