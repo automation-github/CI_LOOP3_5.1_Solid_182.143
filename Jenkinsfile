@@ -7,7 +7,7 @@ pipeline {
         test_name = 'test_multiple_pods_basic_functionality.py'
       }
       steps {
-        build(job: 'multiple_pods_basic_functionality_5.1', propagate: true)
+        build(job: 'multiple_pods_basic_functionality_5.1', propagate: false)
       }
     }
     stage('multiple_pods_session_allocation_5.1') {
@@ -16,7 +16,7 @@ pipeline {
         test_name = 'test_multiple_pods_session_allocation.py'
       }
       steps {
-        build(job: 'multiple_pods_session_allocation_5.1', propagate: true)
+        build(job: 'multiple_pods_session_allocation_5.1', propagate: false)
       }
     }
   }
