@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'master'
+      customWorkspace '/var/lib/jenkins/workspace/CI_LOOP3_5.1_SOLID_182.143'
+    }
+  }
   environment {
     target_cluster = '10.65.182.143'
   }
