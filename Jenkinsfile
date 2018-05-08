@@ -65,7 +65,7 @@ def BuildJob(projectName) {
 }
 
 node {
-  ws('/var/lib/jenkins/workspace/CI_LOOP3_5.1_SOLID_182.143') {
+  dir('/var/lib/jenkins/workspace/CI_LOOP3_5.1_SOLID_182.143') {
     
   // agent {
   //     label 'master'
